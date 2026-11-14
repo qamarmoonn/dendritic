@@ -1,13 +1,13 @@
-{...}: {
-    flake.nixosModules.user = {...}: {
-	users.users.qamar = {
-	    isNormalUser = true;
-	    initialPassword = "password";
-	    extraGroups = [
-		"root"
-		"wheel"
-	    ];
+{ ... }: {
+  flake.nixosModules.user = { ... }: {
+    users.users.qamar = {
+      isNormalUser = true;
+      initialPassword = "password";
+      extraGroups = [
+        "root"
+        "wheel"
+      ];
 
-	};
     };
+  };
 }
