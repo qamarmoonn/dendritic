@@ -6,7 +6,10 @@
     import-tree.url = "github:vic/import-tree";
     wrappers.url = "github:nix-community/nix-wrapper-modules";
 
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     caelestia-shell = {
       url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
