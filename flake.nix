@@ -5,6 +5,13 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
     wrappers.url = "github:nix-community/nix-wrapper-modules";
+
+    hyprland.url = "github:hyprwm/Hyprland";
+    caelestia-shell = {
+      url = "github:caelestia-dots/shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };  
+
   };
 
   # import modules/ automatically
