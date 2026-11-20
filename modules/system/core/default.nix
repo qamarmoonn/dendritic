@@ -5,7 +5,6 @@
         bootloader
         networking
         user
-	bash
       ];
     in
     {
