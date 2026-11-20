@@ -1,5 +1,4 @@
 { 
-    pkgs,
     inputs,
     ... 
 }: {
@@ -12,8 +11,14 @@
           environment.systemPackages = with pkgs; [
     	    hyprlandPkg
     	    caelestiaPkg
+	    foot
+	    hyprlauncher
+	    kdePackages.dolphin
+	    rofi
+	    waybar
           ];	
 
 	  programs.hyprland.enable = true;
+	
     };
 }
