@@ -6,6 +6,7 @@
       extraGroups = [
         "root"
         "wheel"
+	"networkmanager"
       ];
 
     };
