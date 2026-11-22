@@ -3,6 +3,7 @@
     modules = with self.nixosModules; [
       core
       hyprland
+      gaming
     ];
   };
 }

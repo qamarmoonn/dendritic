@@ -15,6 +15,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };  
 
+    lunar-client.url = "github:clonidine/lunar-client-flake";
+
   };
 
   # import modules/ automatically
