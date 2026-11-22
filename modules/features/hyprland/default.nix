@@ -16,6 +16,7 @@
 	    kdePackages.dolphin
 	    rofi
 	    waybar
+	    firefox
           ];	
 
 	  programs.hyprland.enable = true;
