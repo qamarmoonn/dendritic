@@ -16,6 +16,12 @@
 	    kdePackages.dolphin
 	    rofi
 	    waybar
+	    hyprpolkitagent
+	    hyprpaper
+	    xdg-desktop-portal-gtk
+	    wl-clipboard
+	    xwayland
+
 	    firefox
           ];	
 
