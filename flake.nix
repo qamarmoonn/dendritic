@@ -14,6 +14,10 @@
       url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };  
+    noctalia-shell = {
+      url = "github:noctalia-dev/noctalia";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     lunar-client.url = "github:clonidine/lunar-client-flake";
 

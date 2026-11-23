@@ -5,12 +5,14 @@
     flake.nixosModules.hyprland = { pkgs, ... }: 
     let
         hyprlandPkg = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-        caelestiaPkg = inputs.caelestia-shell.packages.${pkgs.stdenv.hostPlatform.system}.with-cli;
+        #caelestiaPkg = inputs.caelestia-shell.packages.${pkgs.stdenv.hostPlatform.system}.with-cli;
+        noctaliaPkg = inputs.noctalia-shell.packages.${pkgs.stdenv.hostPlatform.system}.default;
     in
     {
           environment.systemPackages = with pkgs; [
     	    hyprlandPkg
-    	    caelestiaPkg
+    	    #caelestiaPkg
+	    noctaliaPkg
 	    foot
 	    hyprlauncher
 	    kdePackages.dolphin
