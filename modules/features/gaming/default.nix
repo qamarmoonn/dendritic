@@ -7,8 +7,12 @@
           environment.systemPackages = with pkgs; [
 	    discord
 	    lunarclientPkg
+	    prismlauncher
           ];	
 
+	  programs.steam = {
+	      enable = true;
+	  };
 	
     };
 }
