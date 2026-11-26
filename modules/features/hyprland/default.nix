@@ -22,12 +22,15 @@
 	    hyprpaper
 	    xdg-desktop-portal-gtk
 	    wl-clipboard
-	    xwayland
 
 	    firefox
           ];	
 
-	  programs.hyprland.enable = true;
+	  programs.hyprland = {
+	    enable = true;
+	    withUWSM = true;
+	    xwayland.enable = true;
+	  };
 	
     };
 }

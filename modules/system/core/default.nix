@@ -14,6 +14,8 @@
         ]
         ++ modules;
 
+	time.timeZone = "America/Chicago";
+
       environment.systemPackages = with pkgs; [
         neovim
         git
@@ -23,6 +25,7 @@
 
 
       nixpkgs.config.allowUnfree = true;
+      nix.settings.experimental-features = [ "nix-command" "flake" ];
 
 
     };
